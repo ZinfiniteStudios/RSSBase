@@ -1,0 +1,34 @@
+<resources>
+    <string name="title_article_detail">Post Detail</string>
+    <string name="title_article_list">Bruins Football</string>
+	<string name="btn_offline_reading">Save for later</string>
+	<string name="btn_mark_unread">Mark unread</string>
+	<string name="btn_refresh">Refresh</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="about_text">This app is brought to you by</string>
+    <string name="about_bottom_text">Produced and distributed by</string>
+
+    <!--ActionBar titles-->
+    <string name="ab_feed_title">@string/app_name</string>
+    <string name="ab_location_title">Location</string>
+    <string name="ab_facebook">Facebook</string>
+    <string name="ab_twitter">Twitter</string>
+    <string name="ab_youtube">Youtube</string>
+    <string name="ab_about">About</string>
+
+    <!--These will be able to changes easily based on the client-->
+    <string name="app_name">Bruins Football</string>
+    <!--<string name="feed_url">http://www.willowtreeapps.com/feed/</string>-->
+    <string name="feed_url">http://westernbranchfootball.stackvarsity.com/rss/news/</string>
+    <string name="main_url">http://www.cpschools.com/Schools/WBH/index.php</string>
+    <string name="location_lat_lon">38.029303,-78.478936</string>
+    <string name="location_title">Western Branch High School</string>
+    <string name="location_content">Home of the Bruins</string>
+    <string name="slogan">Home of the Bruins</string>
+    <string name="facebook_url">https://www.facebook.com/pages/Western-Branch-Football-Booster-Club/114489125237832</string>
+    <string name="twitter_url">http://twitter.com/willowtreeapps</string>
+    <string name="crittercism_id">523e8589d0d8f760f2000003</string>
+
+
+</resources>

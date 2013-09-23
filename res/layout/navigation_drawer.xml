@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:oak="http://oak/oak/schema"
+        xmlns:rssbase="http://rssbase-android/schema"
+        android:layout_width="@dimen/nav_drawer_width"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:background="@color/holo_dark">
+
+<ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+    <LinearLayout
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" >
+
+      <com.bruins.android.activity.widget.NavDrawerItem
+          style="@style/NavDrawerItem"
+          android:id="@+id/drawer_feed"
+          rssbase:itemText="News" />
+
+      <com.bruins.android.activity.widget.NavDrawerItem
+              style="@style/NavDrawerItem"
+              android:id="@+id/drawer_location"
+              rssbase:itemText="Location" />
+
+      <com.bruins.android.activity.widget.NavDrawerItem
+              style="@style/NavDrawerItem"
+              android:id="@+id/drawer_facebook"
+              rssbase:itemText="Facebook" />
+
+      <com.bruins.android.activity.widget.NavDrawerItem
+              style="@style/NavDrawerItem"
+              android:id="@+id/drawer_twitter"
+              rssbase:itemText="Twitter" />
+
+        <com.bruins.android.activity.widget.NavDrawerItem
+                style="@style/NavDrawerItem"
+                android:id="@+id/drawer_about"
+                rssbase:itemText="About" />
+    </LinearLayout>
+ </ScrollView>
+
+    <ImageView
+            android:id="@+id/nav_drawer_footer"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/footer"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name" />
+
+</LinearLayout>

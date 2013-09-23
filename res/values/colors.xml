@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Constant colors that will stay the same across apps-->
+    <color name="white">#ffffffff</color>
+    <color name="black">#000000</color>
+    <color name="holo_dark">#ff707070</color>
+    <color name="translucent_white">#26ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="ab_dark">#222222</color>
+
+    <!--Build this out to support custom colors to align with a particular branding, per client-->
+    <color name="client_color">#A8A8A8</color>
+    <color name="pressed_bruins">#CC032A51</color>
+
+
+
+</resources>

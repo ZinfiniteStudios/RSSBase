@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:oak="http://oak/oak/schema"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+    <ImageView
+            android:id="@+id/about_background"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blur"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/app_name" />
+    <LinearLayout
+              android:orientation="vertical"
+              android:layout_margin="4dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+        <!--<oak.widget.TextViewWithFont-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_marginTop="24dp"-->
+            <!--android:textSize="24sp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/about_text"-->
+            <!--style="@style/ShadowText"-->
+            <!--android:textColor="@color/white"-->
+            <!--oak:font="Roboto-Light.ttf" />-->
+
+        <oak.widget.TextViewWithFont
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_marginTop="36dp"
+            android:textSize="34sp"
+            android:textColor="@color/white"
+            style="@style/ShadowText"
+            android:text="Western Branch High School" />
+
+        <oak.widget.TextViewWithFont
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="24dp"
+                android:textSize="26sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/slogan"
+                style="@style/ShadowText"
+                oak:font="Roboto-Light.ttf" />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+        <oak.widget.TextViewWithFont
+                android:id="@+id/build_number"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="2dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="v1.0.0"
+                style="@style/ShadowText"
+                android:textColor="@color/white"
+                oak:font="Roboto-Light.ttf" />
+
+        <View
+            style="@style/NavigationDrawerDividerWhite" />
+
+        <oak.widget.TextViewWithFont
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                style="@style/ShadowText"
+                android:text="@string/about_bottom_text"
+                oak:font="Roboto-Light.ttf" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:weightSum="2" >
+
+
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/build_owner"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    style="@style/ShadowText"
+                    android:text="David Hodge"
+                    oak:font="Roboto-Light.ttf" />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/producer_logo"-->
+                <!--android:layout_width="0px"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="48dp"-->
+                <!--android:contentDescription="@string/app_name"-->
+                <!--android:src="@drawable/willowtree" />-->
+
+            <!--<ImageView-->
+                    <!--android:id="@+id/partner_logo"-->
+                    <!--android:layout_width="0px"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="48dp"-->
+                    <!--android:contentDescription="@string/app_name"-->
+                    <!--android:src="@drawable/omax" />-->
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

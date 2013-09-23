@@ -1,0 +1,13 @@
+How-to Spin up new app
+
+1. Create new branch from master on git
+2. Review form form client
+3. enter all provided information into Strings
+4. change colors file if applicable
+4. add proper nav items (according to client form)
+5. change nav logo if applicable
+6. change locations lat-lon
+7. Change about screen based on provided information
+8. Create app launcher icon based on provided information
+9. test for verification
+10. release to store (under created play store account)
