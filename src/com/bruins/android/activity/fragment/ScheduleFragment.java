@@ -1,22 +1,21 @@
 package com.bruins.android.activity.fragment;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.ComponentName;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import com.github.rtyley.android.sherlock.roboguice.fragment.RoboSherlockFragment;
 import com.manuelpeinado.fadingactionbar.FadingActionBarHelper;
-import com.bruins.android.R;
-import roboguice.inject.InjectView;
+import com.bruins.android.v2.R;
+import com.viewpagerindicator.TitlePageIndicator;
 import android.content.Context;
+
+import java.util.ArrayList;
 
 /**
  * Created with IntelliJ IDEA.
@@ -27,144 +26,119 @@ import android.content.Context;
  */
 public class ScheduleFragment extends RoboSherlockFragment {
 
-    @InjectView(R.id.game_1) RelativeLayout game1;
-    @InjectView(R.id.game_2) RelativeLayout game2;
-    @InjectView(R.id.game_3) RelativeLayout game3;
-    @InjectView(R.id.game_4) RelativeLayout game4;
-    @InjectView(R.id.game_5) RelativeLayout game5;
-    @InjectView(R.id.game_6) RelativeLayout game6;
-    @InjectView(R.id.game_7) RelativeLayout game7;
-    Context mContext;
     private FadingActionBarHelper mFadingHelper;
     private Bundle mArguments;
     public static final String ARG_IMAGE_RES = "image_source";
     public static final String ARG_ACTION_BG_RES = "image_action_bs_res";
+    Context mContext;
+    View view;
+    ViewPager schedulePager;
+    TitlePageIndicator scheduleTPI;
+    private ArrayList<Fragment> mFragments;
+    private ArrayList<String> mtitles;
+    VarsitySchedule varsitySchedule = new VarsitySchedule();
+    JVSchedule jvSchedule = new JVSchedule();
+    AboutFragment aboutFragment = new AboutFragment();
+    ScheduleAdapter scheduleAdapter;
 
-//    @Override
-//    public void onCreate(Bundle savedInstanceState){
-//        super.onCreate(savedInstanceState);
-//        FadingActionBarHelper helper = new FadingActionBarHelper()
-//                .actionBarBackground(R.style.AppTheme)
-//                .headerLayout(R.layout.hos_vpoint_header)
-//                .parallax(true)
-//                .contentLayout(R.layout.fragment_schedule);
-//
-//        setContentView(helper.createView(this));
-//        helper.initActionBar(this);
-//    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = mFadingHelper.createView(inflater);
+        super.onCreate(savedInstanceState);
+//        view = mFadingHelper.createView(inflater);
+        view = inflater.inflate(R.layout.fragment_schedule_view, container, false);
+
+        schedulePager = (ViewPager) view.findViewById(R.id.schedule_view_pager);
+        scheduleTPI = (TitlePageIndicator) view.findViewById(R.id.schedule_tpi);
+
+        mtitles = new ArrayList<String>();
+        mtitles.add("Varsity");
+        mtitles.add("JV");
+
+        mFragments =  new ArrayList<Fragment>();
+        mFragments.add(varsitySchedule);
+        mFragments.add(jvSchedule);
+
+        scheduleAdapter = new ScheduleAdapter(getActivity(), mtitles, mFragments);
+
+        schedulePager.setAdapter(scheduleAdapter);
+        scheduleTPI.setViewPager(schedulePager);
+        scheduleTPI.notifyDataSetChanged();
+        scheduleTPI.setOnPageChangeListener(scheduleOPCL);
 
         return view;
     }
 
-    @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-
-//        mArguments = getArguments();
-//        int actionBarBg = mArguments != null ? mArguments.getInt(ARG_ACTION_BG_RES) : R.style.ScheduleTheme;
-
-//        getSherlockActivity().setTheme(R.style.ScheduleTheme);
-
-        mFadingHelper = new FadingActionBarHelper()
-                .actionBarBackground(R.drawable.ab_solid_bruins)
-                .headerLayout(R.layout.schedule_header)
-                .parallax(true)
-                .lightActionBar(false)
-                .contentLayout(R.layout.fragment_schedule);
-        mFadingHelper.initActionBar(getSherlockActivity());
-    }
+//    @Override
+//    public void onAttach(Activity activity) {
+//        super.onAttach(activity);
+//
+//        mFadingHelper = new FadingActionBarHelper()
+//                .actionBarBackground(R.drawable.ab_solid_bruins)
+//                .headerLayout(R.layout.schedule_header)
+//                .parallax(true)
+//                .lightActionBar(false)
+//                .contentLayout(R.layout.fragment_schedule_view);
+//        mFadingHelper.initActionBar(getSherlockActivity());
+//    }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mContext = getActivity().getBaseContext();
-
-        game1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-                        Uri.parse("http://maps.google.com/maps?f=d&daddr=36.8492,-76.405581"));
-                intent.setComponent(new ComponentName("com.google.android.apps.maps",
-                        "com.google.android.maps.MapsActivity"));
-                startActivity(intent);
-            }
-        });
-
-        game2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-                        Uri.parse("http://maps.google.com/maps?f=d&daddr=36.8492,-76.405581"));
-                intent.setComponent(new ComponentName("com.google.android.apps.maps",
-                        "com.google.android.maps.MapsActivity"));
-                startActivity(intent);
-            }
-        });
-
-        game3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-                        Uri.parse("http://maps.google.com/maps?f=d&daddr=36.688037,-76.242546"));
-                intent.setComponent(new ComponentName("com.google.android.apps.maps",
-                        "com.google.android.maps.MapsActivity"));
-                startActivity(intent);
-            }
-        });
-
-        game4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                locationNotAvail();
-            }
-        });
-
-        game5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                locationNotAvail();
-            }
-        });
-
-        game6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-                        Uri.parse("http://maps.google.com/maps?f=d&daddr=36.8492,-76.405581"));
-                intent.setComponent(new ComponentName("com.google.android.apps.maps",
-                        "com.google.android.maps.MapsActivity"));
-                startActivity(intent);
-            }
-        });
-
-        game7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-                        Uri.parse("http://maps.google.com/maps?f=d&daddr=36.8492,-76.405581"));
-                intent.setComponent(new ComponentName("com.google.android.apps.maps",
-                        "com.google.android.maps.MapsActivity"));
-                startActivity(intent);
-            }
-        });
     }
 
-    public void locationNotAvail(){
-        AlertDialog.Builder builder = new AlertDialog.Builder(getSherlockActivity());
-        builder.setMessage("Location information will be available soon, check back later.")
-                .setTitle("Location coming soon!")
-                .setPositiveButton("Okay, Thanks!", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-        builder.create();
-        builder.show();
+    class ScheduleAdapter extends FragmentPagerAdapter{
+        Context context;
+        private LayoutInflater inflater;
+        private ArrayList<String> titles;
+        private ArrayList<Fragment> mFragments;
+
+        public ScheduleAdapter(Context context, ArrayList<String> strings, ArrayList<Fragment> fragments){
+            super(ScheduleFragment.this.getChildFragmentManager());
+            this.context = context;
+            this.titles = strings;
+            this.mFragments = fragments;
+            this.inflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        }
+
+        @Override
+        public int getCount() {
+            return this.titles.size();
+
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return titles.get(position);
+        }
+
+        @Override
+        public Fragment getItem(int i) {
+            return mFragments.get(i);
+        }
+
+        public void setTitles(ArrayList<String> titles) {
+            this.titles = titles;
+        }
+
+        public void setFragments(ArrayList<Fragment> fragments) {
+            this.mFragments = fragments;
+        }
     }
+
+    private ViewPager.OnPageChangeListener scheduleOPCL = new ViewPager.OnPageChangeListener(){
+        @Override
+        public void onPageScrolled(int i, float v, int i1) {
+        }
+
+        @Override
+        public void onPageSelected(int i) {
+        }
+
+        @Override
+        public void onPageScrollStateChanged(int i) {
+        }
+    };
 }

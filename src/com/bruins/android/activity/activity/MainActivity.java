@@ -16,6 +16,8 @@ import android.view.ContextMenu;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import com.actionbarsherlock.app.ActionBar;
+import com.bruins.android.activity.activity.ViewArticle;
+import com.bruins.android.activity.fragment.ScheduleFragment;
 import com.bruins.android.activity.fragment.TwitterFragment;
 import com.crittercism.app.Crittercism;
 import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockFragmentActivity;
@@ -39,7 +41,7 @@ import android.view.SubMenu;
 import com.actionbarsherlock.view.MenuItem;
 import roboguice.inject.RoboInjector;
 import uk.co.senab.actionbarpulltorefresh.extras.actionbarsherlock.PullToRefreshAttacher;
-import com.bruins.android.R;
+import com.bruins.android.v2.R;
 
 
 /**
@@ -163,8 +165,8 @@ public class MainActivity extends RoboSherlockFragmentActivity implements Articl
                 getSupportActionBar().setTitle(getResources().getString(R.string.ab_facebook));
                 break;
             case NAV_ID_TWITTER:
-                fragment = injector.getInstance(TwitterFragment.class);
-                getSupportActionBar().setTitle(getResources().getString(R.string.ab_twitter));
+                fragment = injector.getInstance(ScheduleFragment.class);
+                getSupportActionBar().setTitle("Schedule");
                 break;
             case NAV_ID_ABOUT:
                 fragment = injector.getInstance(AboutFragment.class);
@@ -189,7 +191,7 @@ public class MainActivity extends RoboSherlockFragmentActivity implements Articl
 
     @Override
     public void onBackPressed() {
-        getFragmentManager().getBackStackEntryCount();
+//        getFragmentManager().getBackStackEntryCount();
         if(mfragmentManager.getBackStackEntryCount() == 1){
             this.finish();
         }

@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import com.github.rtyley.android.sherlock.roboguice.fragment.RoboSherlockFragment;
-import com.bruins.android.R;
+import com.bruins.android.v2.R;
 
 /**
  * Created with IntelliJ IDEA.

@@ -21,7 +21,7 @@ import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.bruins.android.R;
+import com.bruins.android.v2.R;
 import com.bruins.android.activity.rss.domain.Article;
 import com.bruins.android.activity.util.DateUtils;
 

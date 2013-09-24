@@ -16,7 +16,7 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.bruins.android.R;
+import com.bruins.android.v2.R;
 /**
  * Created with IntelliJ IDEA.
  * User: david.hodge

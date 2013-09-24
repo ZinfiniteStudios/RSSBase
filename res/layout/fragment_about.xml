@@ -95,18 +95,21 @@
             android:weightSum="2" >
 
 
-            <oak.widget.TextViewWithFont
+            <oak.widget.ButtonWithFont
                     android:id="@+id/build_owner"
                     android:layout_height="wrap_content"
                     android:layout_width="fill_parent"
                     android:layout_marginBottom="12dp"
                     android:layout_marginTop="12dp"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginRight="36dp"
                     android:textSize="20sp"
                     android:gravity="center"
                     android:textColor="@color/white"
                     style="@style/ShadowText"
                     android:text="David Hodge"
                     oak:font="Roboto-Light.ttf" />
+
 
             <!--<ImageView-->
                 <!--android:id="@+id/producer_logo"-->

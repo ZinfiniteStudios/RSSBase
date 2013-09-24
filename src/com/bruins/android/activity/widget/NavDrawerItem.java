@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.content.Context;
 import com.bruins.android.activity.MainApp;
-import com.bruins.android.R;
+import com.bruins.android.v2.R;
 
 /**
  * Created with IntelliJ IDEA.

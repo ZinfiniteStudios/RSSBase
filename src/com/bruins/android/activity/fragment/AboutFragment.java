@@ -8,10 +8,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.github.rtyley.android.sherlock.roboguice.fragment.RoboSherlockFragment;
-import com.bruins.android.R;
+import com.bruins.android.v2.R;
 import android.content.Context;
 import roboguice.inject.InjectView;
 
@@ -29,7 +30,7 @@ public class AboutFragment extends RoboSherlockFragment {
     ImageView producerLogo;
     ImageView partnerLogo;
     @InjectView(R.id.build_number) TextView buildNumber;
-    @InjectView (R.id.build_owner) TextView buildOwner;
+    @InjectView (R.id.build_owner) Button buildOwner;
     Context mContext;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

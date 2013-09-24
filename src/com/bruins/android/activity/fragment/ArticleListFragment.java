@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 import com.actionbarsherlock.app.SherlockListFragment;
 import com.actionbarsherlock.view.MenuItem;
-import com.bruins.android.R;
+import com.bruins.android.v2.R;
 import com.bruins.android.activity.activity.MainActivity;
 import com.bruins.android.activity.adapter.ArticleListAdapter;
 import com.bruins.android.activity.db.DbAdapter;

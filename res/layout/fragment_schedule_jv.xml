@@ -1,88 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="fill_parent"
     android:layout_width="fill_parent"
     android:background="@color/client_color">
 
- <LinearLayout
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <RelativeLayout
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal" >
-        <oak.widget.TextViewWithFont
+            <oak.widget.TextViewWithFont
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_alignParentLeft="true"
                 android:text="When" />
 
-        <oak.widget.TextViewWithFont
+            <oak.widget.TextViewWithFont
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="24dp"
                 android:text="Who" />
-    </RelativeLayout>
+        </RelativeLayout>
 
-    <View
-        style="@style/NavigationDrawerDivider"
-        android:layout_height="2dp"
-        android:background="#032A51"/>
+        <View
+            style="@style/NavigationDrawerDivider"
+            android:layout_height="2dp"
+            android:background="#032A51"/>
 
-    <RelativeLayout
-        android:id="@+id/game_1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/nav_drawer_item_bg"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp"
-        android:orientation="horizontal" >
+        <RelativeLayout
+            android:id="@+id/game_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nav_drawer_item_bg"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal" >
 
-        <LinearLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_alignParentLeft="true"
                 android:orientation="vertical" >
-        <oak.widget.TextViewWithFont
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="09/27" />
+                <oak.widget.TextViewWithFont
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="09/26" />
 
-        <oak.widget.TextViewWithFont
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="7:00pm" />
-         </LinearLayout>
+                <oak.widget.TextViewWithFont
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="6:00pm" />
+            </LinearLayout>
 
-        <LinearLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="24dp"
                 android:orientation="vertical" >
 
-        <oak.widget.TextViewWithFont
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="Deep Creek HS" />
+                <oak.widget.TextViewWithFont
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Deep Creek HS" />
 
-        <oak.widget.TextViewWithFont
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="at Western Branch HS" />
+                <oak.widget.TextViewWithFont
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="at Deep Creek HS" />
 
-        </LinearLayout>
-    </RelativeLayout>
-    <View
+            </LinearLayout>
+        </RelativeLayout>
+        <View
             style="@style/NavigationDrawerDivider" />
 
-    <RelativeLayout
+        <RelativeLayout
             android:id="@+id/game_2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -91,47 +92,47 @@
             android:layout_marginBottom="12dp"
             android:orientation="horizontal" >
 
-        <LinearLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_alignParentLeft="true"
                 android:orientation="vertical" >
-            <oak.widget.TextViewWithFont
+                <oak.widget.TextViewWithFont
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="10/04" />
+                    android:text="10/17" />
 
-            <oak.widget.TextViewWithFont
+                <oak.widget.TextViewWithFont
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="7:00pm" />
-        </LinearLayout>
+                    android:text="6:00pm" />
+            </LinearLayout>
 
-        <LinearLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="24dp"
                 android:orientation="vertical" >
 
-            <oak.widget.TextViewWithFont
+                <oak.widget.TextViewWithFont
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="Grassfield HS" />
+                    android:text="Indian River HS" />
 
-            <oak.widget.TextViewWithFont
+                <oak.widget.TextViewWithFont
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:text="at Western Branch HS" />
 
-        </LinearLayout>
-    </RelativeLayout>
-    <View
+            </LinearLayout>
+        </RelativeLayout>
+        <View
             style="@style/NavigationDrawerDivider" />
 
 
-    <RelativeLayout
+        <RelativeLayout
             android:id="@+id/game_3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -140,46 +141,46 @@
             android:layout_marginBottom="12dp"
             android:orientation="horizontal" >
 
-        <LinearLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_alignParentLeft="true"
                 android:orientation="vertical" >
-            <oak.widget.TextViewWithFont
+                <oak.widget.TextViewWithFont
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="10/11" />
+                    android:text="10/24" />
 
-            <oak.widget.TextViewWithFont
+                <oak.widget.TextViewWithFont
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="7:00pm" />
-        </LinearLayout>
+                    android:text="6:00pm" />
+            </LinearLayout>
 
-        <LinearLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="24dp"
                 android:orientation="vertical" >
 
-            <oak.widget.TextViewWithFont
+                <oak.widget.TextViewWithFont
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="Great Bridge HS" />
+                    android:text="Lakeland HS" />
 
-            <oak.widget.TextViewWithFont
+                <oak.widget.TextViewWithFont
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="at Great Bridge HS" />
+                    android:text="at Western Branch HS" />
 
-        </LinearLayout>
-    </RelativeLayout>
-    <View
+            </LinearLayout>
+        </RelativeLayout>
+        <View
             style="@style/NavigationDrawerDivider" />
 
-    <RelativeLayout
+        <RelativeLayout
             android:id="@+id/game_4"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -188,46 +189,46 @@
             android:layout_marginBottom="12dp"
             android:orientation="horizontal" >
 
-        <LinearLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_alignParentLeft="true"
                 android:orientation="vertical" >
-            <oak.widget.TextViewWithFont
+                <oak.widget.TextViewWithFont
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="10/18" />
+                    android:text="10/31" />
 
-            <oak.widget.TextViewWithFont
+                <oak.widget.TextViewWithFont
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="7:00pm" />
-        </LinearLayout>
+                    android:text="6:00pm" />
+            </LinearLayout>
 
-        <LinearLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="24dp"
                 android:orientation="vertical" >
 
-            <oak.widget.TextViewWithFont
+                <oak.widget.TextViewWithFont
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="Indian River HS" />
+                    android:text="Nansemond River HS" />
 
-            <oak.widget.TextViewWithFont
+                <oak.widget.TextViewWithFont
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="at Indian River HS" />
+                    android:text="at Nansemond River HS" />
 
-        </LinearLayout>
-    </RelativeLayout>
-    <View
+            </LinearLayout>
+        </RelativeLayout>
+        <View
             style="@style/NavigationDrawerDivider" />
 
-    <RelativeLayout
+        <RelativeLayout
             android:id="@+id/game_5"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -236,141 +237,43 @@
             android:layout_marginBottom="12dp"
             android:orientation="horizontal" >
 
-        <LinearLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_alignParentLeft="true"
                 android:orientation="vertical" >
-            <oak.widget.TextViewWithFont
+                <oak.widget.TextViewWithFont
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="10/25" />
+                    android:text="11/07" />
 
-            <oak.widget.TextViewWithFont
+                <oak.widget.TextViewWithFont
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="7:00pm" />
-        </LinearLayout>
+                    android:text="6:00pm" />
+            </LinearLayout>
 
-        <LinearLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="24dp"
                 android:orientation="vertical" >
 
-            <oak.widget.TextViewWithFont
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="Lakeland HS" />
-
-            <oak.widget.TextViewWithFont
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="at Lakeland HS" />
-
-        </LinearLayout>
-    </RelativeLayout>
-    <View
-        style="@style/NavigationDrawerDivider" />
-
-    <RelativeLayout
-            android:id="@+id/game_6"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/nav_drawer_item_bg"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="12dp"
-            android:orientation="horizontal" >
-
-        <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_alignParentLeft="true"
-                android:orientation="vertical" >
-            <oak.widget.TextViewWithFont
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="11/01" />
-
-            <oak.widget.TextViewWithFont
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="7:00pm" />
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="24dp"
-                android:orientation="vertical" >
-
-            <oak.widget.TextViewWithFont
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="Nansemond River HS" />
-
-            <oak.widget.TextViewWithFont
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="at Western Branch HS" />
-
-        </LinearLayout>
-    </RelativeLayout>
-    <View
-            style="@style/NavigationDrawerDivider" />
-
-
-    <RelativeLayout
-            android:id="@+id/game_7"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/nav_drawer_item_bg"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="12dp"
-            android:orientation="horizontal" >
-
-        <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_alignParentLeft="true"
-                android:orientation="vertical" >
-            <oak.widget.TextViewWithFont
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="11/08" />
-
-            <oak.widget.TextViewWithFont
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="7:00pm" />
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="24dp"
-                android:orientation="vertical" >
-
-            <oak.widget.TextViewWithFont
+                <oak.widget.TextViewWithFont
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:text="Kings Fork HS" />
 
-            <oak.widget.TextViewWithFont
+                <oak.widget.TextViewWithFont
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="at Western Branch HS" />
+                    android:text="at Kings Fork HS" />
 
-        </LinearLayout>
-    </RelativeLayout>
-    <View
+            </LinearLayout>
+        </RelativeLayout>
+        <View
             style="@style/NavigationDrawerDivider" />
-
- </LinearLayout>
+    </LinearLayout>
 </ScrollView>

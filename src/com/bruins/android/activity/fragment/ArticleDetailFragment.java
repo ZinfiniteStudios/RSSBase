@@ -18,7 +18,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bruins.android.R;
+import com.bruins.android.v2.R;
 import com.bruins.android.activity.adapter.ArticleListAdapter;
 import com.bruins.android.activity.db.DbAdapter;
 import com.bruins.android.activity.rss.domain.Article;
@@ -41,7 +41,6 @@ public class ArticleDetailFragment extends Fragment {
         db = new DbAdapter(getActivity());
         if (getArguments().containsKey(Article.KEY)) {
             displayedArticle = (Article) getArguments().getSerializable(Article.KEY);
-            Log.d("ARTICLE", displayedArticle.toString());
         }
     }
 

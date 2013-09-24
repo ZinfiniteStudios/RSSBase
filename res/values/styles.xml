@@ -42,6 +42,17 @@
         <item name="android:shadowRadius">5.0</item>
     </style>
 
+    <style name="CustomTitlePageIndicator">
+        <item name="android:background">#2F2F2F</item>
+        <item name="footerColor">#CC032A51</item>
+        <item name="footerLineHeight">1dp</item>
+        <item name="footerIndicatorHeight">3dp</item>
+        <item name="footerIndicatorStyle">underline</item>
+        <item name="android:textColor">#E5E5E5</item>
+        <item name="selectedColor">#E5E5E5</item>
+        <item name="selectedBold">true</item>
+    </style>
+
 
 
 

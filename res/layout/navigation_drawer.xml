@@ -39,7 +39,7 @@
       <com.bruins.android.activity.widget.NavDrawerItem
               style="@style/NavDrawerItem"
               android:id="@+id/drawer_twitter"
-              rssbase:itemText="Twitter" />
+              rssbase:itemText="Schedule" />
 
         <com.bruins.android.activity.widget.NavDrawerItem
                 style="@style/NavDrawerItem"

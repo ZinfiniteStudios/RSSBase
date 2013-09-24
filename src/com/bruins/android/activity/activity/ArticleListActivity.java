@@ -8,7 +8,7 @@ import android.util.Log;
 import com.bruins.android.activity.activity.ArticleDetailActivity;
 import com.bruins.android.activity.fragment.ArticleDetailFragment;
 import com.bruins.android.activity.fragment.ArticleListFragment;
-import com.bruins.android.R;
+import com.bruins.android.v2.R;
 import com.bruins.android.activity.adapter.ArticleListAdapter;
 import com.bruins.android.activity.db.DbAdapter;
 import com.bruins.android.activity.rss.domain.Article;

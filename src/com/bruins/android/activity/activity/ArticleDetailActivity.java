@@ -2,7 +2,7 @@ package com.bruins.android.activity.activity;
 
 import android.util.Log;
 import com.bruins.android.activity.fragment.ArticleDetailFragment;
-import com.bruins.android.R;
+import com.bruins.android.v2.R;
 
 import android.content.Intent;
 import android.os.Bundle;
