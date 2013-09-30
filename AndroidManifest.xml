@@ -50,6 +50,7 @@
         </activity>
 
         <activity android:name="com.bruins.android.activity.activity.ViewArticle" />
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="3231c4938046b48499ffacdd39b0e0e33a58506e"/>
     </application>
 
 </manifest>

@@ -19,6 +19,7 @@ import com.actionbarsherlock.app.ActionBar;
 import com.bruins.android.activity.activity.ViewArticle;
 import com.bruins.android.activity.fragment.ScheduleFragment;
 import com.bruins.android.activity.fragment.TwitterFragment;
+import com.crashlytics.android.Crashlytics;
 import com.crittercism.app.Crittercism;
 import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockFragmentActivity;
 import com.google.analytics.tracking.android.EasyTracker;
@@ -80,6 +81,8 @@ public class MainActivity extends RoboSherlockFragmentActivity implements Articl
     public void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
         super.onCreate(savedInstanceState);
+        Crashlytics.start(this);
+
         Crittercism.init(getApplicationContext(), getResources().getString(R.string.crittercism_id));
         setTheme(R.style.Theme_Bruins);
         setContentView(R.layout.main_activity);
